@@ -22,7 +22,7 @@
     <google.protobuf.version>3.24.3</google.protobuf.version>
     <google.common-proto.version>2.25.1</google.common-proto.version>
     <grpc.lognet.version>5.0.0</grpc.lognet.version>
-    <reactor-grpc.version>1.2.3</reactor-grpc.version>
+    <reactor-grpc.version>1.2.4</reactor-grpc.version>
     <protobuf-maven-plugin.version>0.6.0</protobuf-maven-plugin.version>
   </properties>
   
