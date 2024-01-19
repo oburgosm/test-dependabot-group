@@ -13,3 +13,11 @@ updates:
       couchbase-dependencies:
         patterns:
           - 'com.couchbase.client:*'
+      grpc-dependencies:
+        patterns:
+          - 'io.grpc:*'
+          - 'com.google.protobuf:*'
+          - 'com.google.api.grpc:*'
+          - 'io.github.lognet:grpc*'
+          - 'com.salesforce.servicelibs:reactot-grpc*'
+          - 'org.xolstice.maven.plugins:protobuf-maven-plugin'

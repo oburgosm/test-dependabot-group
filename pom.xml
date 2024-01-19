@@ -17,6 +17,13 @@
     <couchbase-tracing-opentelemetry.version>1.2.11</couchbase-tracing-opentelemetry.version>
     <couchbase-metrics-micrometer.version>0.4.11</couchbase-metrics-micrometer.version>
     <couchbase-client.version>3.4.11</couchbase-client.version>
+    
+    <google.grpc.version>1.59.1</google.grpc.version>
+    <google.protobuf.version>3.24.3</google.protobuf.version>
+    <google.common-proto.version>2.25.1</google.common-proto.version>
+    <grpc.lognet.version>5.0.0</grpc.lognet.version>
+    <reactor-grpc.version>1.2.3</reactor-grpc.version>
+    <protobuf-maven-plugin.version>0.6.0</protobuf-maven-plugin.version>
   </properties>
   
   <dependencyManagement>
@@ -36,6 +43,62 @@
         <artifactId>java-client</artifactId>
         <version>${couchbase-client.version}</version>
       </dependency>
+      
+      <dependency>
+        <groupId>io.grpc</groupId>
+        <artifactId>grpc-bom</artifactId>
+        <version>${google.grpc.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>com.google.protobuf</groupId>
+        <artifactId>protobuf-java</artifactId>
+        <version>${google.protobuf.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.google.protobuf</groupId>
+        <artifactId>protobuf-java-util</artifactId>
+        <version>${google.protobuf.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.google.api.grpc</groupId>
+        <artifactId>proto-google-common-protos</artifactId>
+        <version>${google.common-proto.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.github.lognet</groupId>
+        <artifactId>grpc-spring-boot-starter</artifactId>
+        <version>${grpc.lognet.version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>io.grpc</groupId>
+            <artifactId>grpc-netty-shaded</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>
+      <dependency>
+        <groupId>io.github.lognet</groupId>
+        <artifactId>grpc-client-spring-boot-starter</artifactId>
+        <version>${grpc.lognet.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.salesforce.servicelibs</groupId>
+        <artifactId>reactor-grpc-stub</artifactId>
+        <version>${reactor-grpc.version}</version>
+      </dependency>
+      
     </dependencies>
   </dependencyManagement>
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.xolstice.maven.plugins</groupId>
+          <artifactId>protobuf-maven-plugin</artifactId>
+          <version>${protobuf-maven-plugin.version}</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
 </project>
