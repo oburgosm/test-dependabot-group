@@ -19,5 +19,5 @@ updates:
           - 'com.google.protobuf:*'
           - 'com.google.api.grpc:*'
           - 'io.github.lognet:grpc*'
-          - 'com.salesforce.servicelibs:reactot-grpc*'
+          - 'com.salesforce.servicelibs:reactor-grpc*'
           - 'org.xolstice.maven.plugins:protobuf-maven-plugin'
