@@ -16,7 +16,7 @@
   <properties>
     <couchbase-tracing-opentelemetry.version>1.2.11</couchbase-tracing-opentelemetry.version>
     <couchbase-metrics-micrometer.version>0.4.11</couchbase-metrics-micrometer.version>
-    <couchbase-client.version>3.4.11</couchbase-client.version>
+    <couchbase-client.version>3.5.2</couchbase-client.version>
   </properties>
   
   <dependencyManagement>
