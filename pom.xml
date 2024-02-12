@@ -24,6 +24,9 @@
     <grpc.lognet.version>5.0.0</grpc.lognet.version>
     <reactor-grpc.version>1.2.3</reactor-grpc.version>
     <protobuf-maven-plugin.version>0.6.0</protobuf-maven-plugin.version>
+	
+	<agroal.version>2.2</agroal.version>
+    <snowdrop-narayana.version>2.6.7</snowdrop-narayana.version>
   </properties>
   
   <dependencyManagement>
@@ -86,6 +89,19 @@
         <groupId>com.salesforce.servicelibs</groupId>
         <artifactId>reactor-grpc-stub</artifactId>
         <version>${reactor-grpc.version}</version>
+      </dependency>
+	  
+	        <!-- Nayarana related -->
+      <dependency>
+        <groupId>dev.snowdrop</groupId>
+        <artifactId>narayana-spring-boot-starter</artifactId>
+        <version>${snowdrop-narayana.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>io.agroal</groupId>
+        <artifactId>agroal-spring-boot-starter</artifactId>
+        <version>${agroal.version}</version>
       </dependency>
       
     </dependencies>

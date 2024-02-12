@@ -21,3 +21,7 @@ updates:
           - 'io.github.lognet:grpc*'
           - 'com.salesforce.servicelibs:reactor-grpc*'
           - 'org.xolstice.maven.plugins:protobuf-maven-plugin'
+      narayana-dependencies:
+        patterns:
+          - 'io.agroal:*'
+          - 'dev.snowdrop:narayana*'
