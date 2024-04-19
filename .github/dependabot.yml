@@ -21,7 +21,7 @@ updates:
           - 'io.github.lognet:grpc*'
           - 'com.salesforce.servicelibs:reactor-grpc*'
           - 'org.xolstice.maven.plugins:protobuf-maven-plugin'
-      update-types:
+        update-types:
           - "minor"
           - "patch"
       narayana-dependencies:
