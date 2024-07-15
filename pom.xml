@@ -25,8 +25,8 @@
     <reactor-grpc.version>1.2.3</reactor-grpc.version>
     <protobuf-maven-plugin.version>0.6.0</protobuf-maven-plugin.version>
 	
-	<agroal.version>2.2</agroal.version>
-    <snowdrop-narayana.version>2.6.7</snowdrop-narayana.version>
+	<agroal.version>2.5</agroal.version>
+    <snowdrop-narayana.version>3.1.1</snowdrop-narayana.version>
   </properties>
   
   <dependencyManagement>
