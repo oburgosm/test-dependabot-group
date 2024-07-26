@@ -18,12 +18,12 @@
     <couchbase-metrics-micrometer.version>0.5.2</couchbase-metrics-micrometer.version>
     <couchbase-client.version>3.5.2</couchbase-client.version>
     
-    <google.grpc.version>1.59.1</google.grpc.version>
+    <google.grpc.version>1.65.1</google.grpc.version>
     <google.protobuf.version>3.24.3</google.protobuf.version>
-    <google.common-proto.version>2.25.1</google.common-proto.version>
-    <grpc.lognet.version>5.0.0</grpc.lognet.version>
-    <reactor-grpc.version>1.2.3</reactor-grpc.version>
-    <protobuf-maven-plugin.version>0.6.0</protobuf-maven-plugin.version>
+    <google.common-proto.version>2.42.0</google.common-proto.version>
+    <grpc.lognet.version>5.1.5</grpc.lognet.version>
+    <reactor-grpc.version>1.2.4</reactor-grpc.version>
+    <protobuf-maven-plugin.version>0.6.1</protobuf-maven-plugin.version>
 	
 	<agroal.version>2.2</agroal.version>
     <snowdrop-narayana.version>2.6.7</snowdrop-narayana.version>
