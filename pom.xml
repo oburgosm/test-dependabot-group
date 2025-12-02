@@ -26,7 +26,7 @@
     <protobuf-maven-plugin.version>0.6.1</protobuf-maven-plugin.version>
 	
 	<agroal.version>2.8</agroal.version>
-    <snowdrop-narayana.version>3.5.0</snowdrop-narayana.version>
+    <snowdrop-narayana.version>4.0.0</snowdrop-narayana.version>
   </properties>
   
   <dependencyManagement>
